@@ -1,0 +1,97 @@
+@font-face {
+	font-family: loral-semibold;
+	src: url(./Lora-SemiBold.ttf);
+}
+
+@keyframes enter_left{
+	from{
+		transform: translateX(-100%);
+	}
+	to{
+		transform:translateX(100%);
+	}
+}
+
+@keyframes enter_right{
+	from{
+		transform: translateX(0%);
+	}
+	to{
+		transform:translateX(-100%);
+	}
+}
+
+.header{
+	animation: enter_left 1s .2s forwards;
+	background:black;
+	font-size:100px;
+	color:white;
+	position:absolute;
+	top:0px;
+	left:-100%;
+	font-family:loral-semibold;
+	width: 100%;
+	padding-bottom:5px;
+	border-bottom:5px solid white;
+	
+}
+
+h2{
+	font-family:loral-semibold;
+}
+
+.body{
+	background:gray;
+	color:white;
+	position:relative;
+	top:125px;
+	width:100%;
+	height:100%
+
+
+}
+
+.foot{
+	animation:enter_right 1s .2s forwards;
+	background:black;
+	font-size:10px;
+	color:white;
+	position:absolute;
+	bottom:0px;
+	left:100%;
+	font-family:loral-semibold;
+	width: 100%;
+	padding-bottom:5px;
+	border-top:5px solid white;
+}
+
+.yt{
+	background:pink;
+	border:5px solid red;
+	font-style:normal;
+	color:black;
+	transition: all .3s;
+	
+}
+
+.yt:hover{
+	transform:translateY(-10px);
+	background:red;
+	color:white;
+}
+
+.gs{
+	background:orange;
+	border:5px solid black;
+	font-style:normal;
+	color:white;
+	transition: all .3s;
+	
+}
+
+.gs:hover{
+	transform:translateY(-10px);
+	background:white;
+	color:black;
+	border:5px solid orange;
+}
